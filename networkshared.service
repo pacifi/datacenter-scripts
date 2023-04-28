@@ -1,0 +1,12 @@
+[Unit]
+Description=Network Shared
+After=network.target
+
+[Service]
+type=simple
+ExecStart=/home/pacifi/permission.sh
+Type=oneshot
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target
