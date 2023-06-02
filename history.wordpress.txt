@@ -1,0 +1,19 @@
+    1  poweroff 
+    2  telnet 192.168.137.3 3306
+    3  cd /u01/wordpress/
+    4  ls
+    5  vim wp-config.php
+    6  sudo vim /etc/nginx/sites-enabled/wordpress.conf 
+    7  sudo systemctl restart nginx
+    8  sudo vim /etc/nginx/sites-enabled/wordpress.conf 
+    9  telnet 192.168.137.3 3306
+   10  cd /etc/nginx/sites-enabled/
+   11  ls
+   12  vim wordpress.conf 
+   13  ls
+   14  sudo su
+   15  root
+   16  ip a
+   17  }
+   18  ip a
+   19  history > history.wordpress.txt
