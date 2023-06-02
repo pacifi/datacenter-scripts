@@ -1,0 +1,128 @@
+    1  poweroff 
+    2  ip a
+    3  sudo vim /etc/netplan/00-installer-config.yaml .
+    4  sudo vim /etc/netplan/00-installer-config.yaml 
+    5  sudo netplan try
+    6  sudo netplan apply
+    7  ip a
+    8  sudo vim /etc/netplan/00-installer-config.yaml 
+    9  iptables -t nat -A POSTROUTING -s 192.168.50.0/24 -o enp0s3 -j SNAT --to 192.168.137.1
+   10  iptables -t nat -A POSTROUTING -s 192.168.50.0/28 -o enp0s3 -j SNAT --to-source 192.168.137.1
+   11  iptables -t nat -A POSTROUTING -o enp0s3 -s 192.168.50.0/28  -j MASQUERADE
+   12  sudo iptables -t nat -A POSTROUTING -o enp0s3 -s 192.168.50.0/28  -j MASQUERADE
+   13  sudo echo 1 > /proc/sys/net/ipv4/ip_forward
+   14  sudo su
+   15  ls
+   16  sudo iptables -t nat -A POSTROUTING -o enp0s3 -j MASQUERADE
+   17  cat /proc/sys/net/ipv4/ip_forward
+   18  sysctl -w net.ipv4.ip_forward=1
+   19  sudo sysctl -w net.ipv4.ip_forward=1
+   20  cat /proc/sys/net/ipv4/ip_forward
+   21  service iptables save
+   22  sudo systemctl status iptables
+   23  sudo apt install iptables
+   24  sudo systemctl status iptables
+   25  sudo systemctl status iptables.service
+   26  sudo systemctl status iptablesd
+   27  sudo apt-get update
+   28  sudo apt-get install iptables
+   29  sudo systemctl restart iptables
+   30  sudo service
+   31  sudo service restart iptables
+   32  sudo service iptables restart
+   33  sudo service iptablesd
+   34  ls
+   35  sudo su
+   36  ip a
+   37  sudo vim /etc/netplan/00-installer-config.yaml 
+   38  ssh bonnier@192.168.50.2
+   39  ping 8.8.8.8
+   40  zls
+   41  ls
+   42  pw
+   43  pwd
+   44  ls
+   45  cd /opt/
+   46  sudo vim permision.sh
+   47  tmux
+   48  ip a
+   49  ls
+   50  ping 8.8.8.8
+   51  cd /opt/
+   52  ls
+   53  sudo vim permision.sh 
+   54  ls
+   55  sudo chmod 777 permision.sh 
+   56  ./permision.sh 
+   57  sudo ./permision.sh 
+   58  sudo reboot 
+   59  ssh bonnier@192.168.50.2
+   60  ls
+   61  sudo su
+   62  ls
+   63  sudo vim /etc/netplan/00-installer-config.yaml 
+   64  sudo netplan apply
+   65  ip a
+   66  ls
+   67  sudo vim /etc/hosts
+   68  sudo reboot 
+   69  sudo vim /etc/hosts
+   70  sudo vim /etc/host
+   71  sudo vim /etc/hostname 
+   72  sudo reboot 
+   73  mysql -u root -p123456
+   74  sudo vim /etc/netplan/00-installer-config.yaml 
+   75  ls
+   76  sudo apt install mysql-server
+   77  sudo apt updte -y
+   78  sudo apt update -y
+   79  sudo apt install mysql-server
+   80  mysql -u root
+   81  mysql -u root -p
+   82  ls
+   83  sudo su
+   84  mysql -u root -p
+   85  sudo su
+   86  mysql -u root -p
+   87  sudo su 
+   88  sudo mysql
+   89  mysql -u root -p123456
+   90  sudo mysql_secure_installation
+   91  mysql -u root -p123456
+   92  sudo mysql_secure_installation
+   93  ls
+   94  mysql -u root -p123456
+   95  mysql -u root -p
+   96  mysql -u wordpress_user -pP@ass123456
+   97  ls
+   98  netstat -putnl
+   99  sudo apt install net-tools
+  100  netstat -putnl
+  101  sudo vim /etc/mysql/my.cnf
+  102  sudo vim /etc/mysql/mysql.cnf 
+  103  sudo vim /etc/mysql/conf.d/mysql.cnf 
+  104  sudo vim /etc/mysql/conf.d/mysqldump.cnf 
+  105  ls
+  106  cd /etc/mysql/
+  107  ls
+  108  vim mysql.conf.d/mysql.cnf 
+  109  vim mysql.conf.d/mysqld.cnf 
+  110  pwd
+  111  netstat -putnl
+  112  pwd
+  113  cd mysql.conf.d/
+  114  ls
+  115  sudo vim /etc/mysql/mysql.conf.d/mysqld.cnf 
+  116  sudo systemctl restart mysql 
+  117  netstat -putnl
+  118  mysql -u wordpress_user -p
+  119  mysql -u root -p123456
+  120  netstat -putnl 
+  121  sudo vim /etc/mysql/mysql.conf.d/mysqld.cnf
+  122  netstat -putnl 
+  123  ls
+  124  ip a
+  125  history 
+  126  sudo su
+  127  history 
+  128  history  > history.mysql.txt
